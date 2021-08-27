@@ -7,14 +7,14 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'IP Tracker'
-    }
-  }
+      title: 'IP Tracker',
+    },
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
 });
 
 router.beforeEach((to, _, next) => {
